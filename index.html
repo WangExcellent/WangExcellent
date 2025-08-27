@@ -82,7 +82,7 @@
           Focus: bioenergetics–population dynamics–migration modeling of Pacific chub mackerel in the Northwest Pacific.
         </p>
         <div class="actions">
-          <!-- 下载简历（自动重命名为【CV_ZiqinWang_YYYY-MM-DD】.pdf） -->
+          <!-- 下载简历（自动重命名为CV_ZiqinWang_YYYY-MM-DD.pdf） -->
           <a id="downloadCV" class="btn primary" href="#" aria-label="Download CV (PDF)">Download CV (PDF)</a>
           <!-- 同时发往两个邮箱 -->
           <a class="btn" href="mailto:wangexcellent@gmail.com,wzq@aori.u-tokyo.ac.jp">Contact</a>
@@ -217,7 +217,7 @@
     // Footer 年份
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Download CV：下载根目录 cv.pdf，并按当天日期重命名为【CV_ZiqinWang_YYYY-MM-DD】.pdf
+    // Download CV：下载根目录 cv.pdf，并按当天日期重命名为CV_ZiqinWang_YYYY-MM-DD.pdf
     (function(){
       const btn = document.getElementById('downloadCV');
       if(!btn) return;
@@ -227,7 +227,7 @@
         const yyyy = t.getFullYear();
         const mm = String(t.getMonth()+1).padStart(2,'0');
         const dd = String(t.getDate()).padStart(2,'0');
-        const filename = `【CV_ZiqinWang_${yyyy}-${mm}-${dd}】.pdf`;
+        const filename = `CV_ZiqinWang_${yyyy}-${mm}-${dd}.pdf`;
         this.setAttribute('href', fileUrl);
         this.setAttribute('download', filename);
       }, {passive:true});
