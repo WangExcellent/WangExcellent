@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ziqin Wang | Academic CV</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Ziqin Wang — Aquatic Bioscience at The University of Tokyo. Bioenergetics–population–migration modeling of Pacific chub mackerel." />
+  <style>
+    :root{
+      --bg:#0b0f14; --panel:#0f1620; --ink:#e7eef7; --muted:#9db0c6; --line:#1c2530;
+      --brand:#4da3ff; --brand-2:#7ad2ff; --accent:#c7ff53;
+      --radius:18px; --radius-sm:12px; --gap:16px; --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:16px 0 8px;border-bottom:1px solid var(--line);position:sticky;top:0;background:linear-gradient(180deg,rgba(11,15,20,.95),rgba(11,15,20,.6) 70%,rgba(11,15,20,0));backdrop-filter:saturate(140%) blur(6px);z-index:10}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#001a33;font-weight:800}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:999px;background:#0c131d;border:1px solid var(--line);color:var(--muted)}
+    nav a:hover{border-color:#203040;color:var(--ink)}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:28px 0}
+    .hero h1{font-size:36px;line-height:1.2;margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+    .actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:11px 16px;border-radius:12px;border:1px solid var(--line);background:#0d141e;color:var(--ink);font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#00152a;border:none}
+    .btn.ghost{background:transparent;color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    @media (max-width:800px){.grid.cols-2{grid-template-columns:1fr}}
+
+    section{padding:12px 0 28px}
+    section h2{margin:0 0 12px;font-size:24px}
+    .timeline{list-style:none;margin:0;padding:0}
+    .timeline li{padding:12px 0;border-bottom:1px dashed var(--line)}
+    .timeline li:last-child{border-bottom:none}
+    .when{display:inline-block;min-width:170px;color:var(--muted);font-variant-numeric:tabular-nums}
+    .where{color:var(--brand-2)}
+    .kicker{letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-size:12px}
+
+    .publist{list-style:decimal;margin:8px 0 0 20px;padding:0}
+    .publist li{margin:10px 0}
+    .badge{display:inline-block;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;margin-left:8px}
+
+    footer{margin:32px 0 12px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- ====== HEADER ====== -->
+    <header>
+      <div class="brand">
+        <div class="avatar">ZW</div>
+        <div>
+          <div class="kicker">Academic Profile</div>
+          <strong>Ziqin Wang</strong>
+        </div>
+      </div>
+      <nav>
+        <a href="#education">Education</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#workshops">Workshops &amp; Practice</a>
+        <a href="#professional">Professional</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="bio">
+      <div>
+        <h1>Hi, I'm Ziqin Wang</h1>
+        <p class="muted">
+          PhD student in Aquatic Bioscience at <span class="where">The University of Tokyo</span>.<br>
+          Focus: bioenergetics–population dynamics–migration modeling of Pacific chub mackerel in the Northwest Pacific.
+        </p>
+        <div class="actions">
+          <!-- 下载简历（自动重命名为【CV_ZiqinWang_YYYY-MM-DD】.pdf） -->
+          <a id="downloadCV" class="btn primary" href="#" aria-label="Download CV (PDF)">Download CV (PDF)</a>
+          <!-- 同时发往两个邮箱 -->
+          <a class="btn" href="mailto:wangexcellent@gmail.com,wzq@aori.u-tokyo.ac.jp">Contact</a>
+          <a class="btn ghost" href="#publications">Jump to Publications</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="kicker">Now</div>
+        <div><strong>The University of Tokyo</strong> — PhD (Aquatic Bioscience)</div>
+        <div class="muted">Modeling • Fisheries Oceanography • Kuroshio • Early life</div>
+        <div style="margin-top:10px">
+          <span class="badge">Python</span>
+          <span class="badge">Fortran</span>
+          <span class="badge">Cartopy</span>
+          <span class="badge">NetCDF</span>
+          <span class="badge">HPC</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EDUCATION ====== -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <ul class="timeline">
+          <li>
+            <span class="when">2024.04–2027.03</span> PhD course of Science in Agriculture in Aquatic Bioscience — <span class="where">The University of Tokyo</span><br/>
+            Supervisor: Shin-ichi Ito
+          </li>
+          <li>
+            <span class="when">2021.04–2023.03</span> Master of Science in Agriculture in Aquatic Bioscience — <span class="where">The University of Tokyo</span><br/>
+            Supervisor: Shin-ichi Ito
+          </li>
+          <li>
+            <span class="when">2016.09–2020.06</span> B.S. in Marine Resources and Environment — <span class="where">The Ocean University of China (OUC; 985 &amp; 211)</span><br/>
+            Supervisor: Yongjun Tian
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== CONFERENCES ====== -->
+    <section id="conferences">
+      <h2>Conferences</h2>
+      <div class="card">
+        <ol class="publist">
+          <li><strong>*Ziqin Wang</strong> &amp; Shin-ichi Ito: Development of a coupling model of bioenergetics and population dynamics: example of Pacific chub mackerel, <em>Japanese Society of Fisheries Oceanography Fall Meeting</em>, Japan, Nov 2021.</li>
+          <li><strong>*Ziqin Wang</strong>, Shin-ichi Ito, Yabe Itsuka &amp; Chenying Guo: Development of a coupling model of bioenergetics and population dynamics: example of Pacific chub mackerel, <em>Japan Geoscience Union Meeting (JpGU) 2022</em>, Makuhari MESSE, Chiba, Japan, May 2022.</li>
+          <li><strong>*Ziqin Wang</strong>, Shin-ichi Ito, Yabe Itsuka &amp; Chenying Guo: Development of a bioenergetics and population dynamics coupled model: An example of chub mackerel, <em>SPF-PICES</em>, Lisbon, Portugal, Nov 2022.</li>
+          <li><strong>*Ziqin Wang</strong>, Shin-ichi Ito, Yabe Itsuka &amp; Chenying Guo: Development of a bioenergetics and population dynamics coupled model: A case study of chub mackerel (poster), <em>SPF-Annual Meeting</em>, Seattle, US, Oct 2023.</li>
+          <li><strong>*Ziqin Wang</strong>, Yoshimasa Matsumura &amp; Shin-ichi Ito: Evaluation of optimal sampling methods of microplastic using a non-hydrostatic particle tracking model, <em>SPF-Annual Meeting</em>, Seattle, US, Oct 2023.</li>
+          <li><strong>*Ziqin Wang</strong>, Yoshimasa Matsumura &amp; Shin-ichi Ito: Evaluation of optimal sampling methods of microplastic using a non-hydrostatic particle tracking model (poster), <em>Ocean Science Meeting</em>, New Orleans, US, Feb 2024.</li>
+          <li><strong>*Ziqin Wang</strong> &amp; Shin-ichi Ito: Evaluating marine fish migratory strategies and subsequent effects on distribution and ontogenetic process using an individual-based model developed for Pacific chub mackerel (oral), <em>PICES-Annual Meeting</em>, Honolulu, US, 26 Oct–1 Nov 2024.</li>
+          <li><strong>*Ziqin Wang</strong>, Yoshimasa Matsumura &amp; Shin-ichi Ito: Evaluation of optimal sampling methods of microplastic using a non-hydrostatic particle tracking model (oral), <em>XMAS</em>, Xiamen, China, 14–17 Jan 2025.</li>
+          <li><strong>*Ziqin Wang</strong> &amp; Shin-ichi Ito: Response analysis of Pacific chub mackerel (<em>Scomber japonicus</em>) to environmental variation and population vulnerability analysis (oral), <em>Japan Geoscience Union Meeting (JpGU) 2025</em>, Makuhari MESSE, Chiba, Japan, 25–30 May 2025.</li>
+          <li><strong>*Ziqin Wang</strong>, Shin-ichi Ito, Shike Gao &amp; Chenying Guo: Coupling bioenergetics and population dynamics models to simulate population dynamics of Japanese chub mackerel: Early life history analysis and future applications (oral), <em>48th Larval Fish Conference</em>, Québec, Canada, 15–19 Jun 2025. <span class="muted">(cancelled, visa issue)</span></li>
+          <li><strong>*Ziqin Wang</strong> &amp; Shin-ichi Ito: Developing a Lagrange model of growth, distribution, and migration of Pacific chub mackerel (<em>Scomber japonicus</em>): to explore the effects of early life history on population fluctuations (oral), <em>ICES ASC 2025</em>, Klaipeda, Lithuania, 15–18 Sep 2025.</li>
+          <li><strong>*Ziqin Wang</strong>, Shin-ichi Ito, Shike Gao &amp; Chenying Guo: Coupling bioenergetics and population dynamics models to simulate population dynamics of Japanese chub mackerel: Early life history analysis and future applications (oral), <em>PICES-Annual Meeting 2025</em>, Yokohama, Japan, 8–14 Nov 2025.</li>
+          <li><strong>*Ziqin Wang</strong> &amp; Shin-ichi Ito: Impacts of Kuroshio Large Meander on Early Life Stages and Recruitment of Chub Mackerel in the Northwestern Pacific (oral), <em>Ocean Science Meeting 2026</em>, Glasgow, Scotland, 22–26 Feb 2026.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====== WORKSHOPS & PRACTICE ====== -->
+    <section id="workshops">
+      <h2>Workshops &amp; Practice</h2>
+      <div class="card">
+        <ul class="timeline">
+          <li><span class="when">2022/08/08–2022/08/10</span> Early Career Ocean Professionals Conference of Japanese Oceanographic Symposium — <span class="where">Yamagata, Japan</span></li>
+          <li><span class="when">2023/09/04–2023/09/06</span> Macro Coastal Oceanography Summer School — <span class="where">Shonan Village Center, Kanagawa, Japan</span></li>
+          <li><span class="when">2024/08/26–2024/08/30</span> Asia-Pacific Network’s (APN) Proposal Development Training Workshop (PDTW) for ECPs — <span class="where">Suva, Fiji</span></li>
+          <li><span class="when">2024/10/01–2024/12/01</span> Exchanging program (building up a model for Pacific mackerel in California Current System) — <span class="where">University of California, Santa Cruz, US</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== PROFESSIONAL ====== -->
+    <section id="professional">
+      <h2>Professional</h2>
+      <div class="card">
+        <ul class="timeline">
+          <li><span class="when">04/2022–03/2023</span> Teaching Assistant (Python Seminar) — <span class="where">The University of Tokyo, Japan</span></li>
+          <li><span class="when">04/2022–03/2023</span> Technician Support (Project of microplastics modelling) — <span class="where">The University of Tokyo, Japan</span></li>
+          <li><span class="when">04/2023–03/2024</span> Foreigner Researcher (Project of microplastics modelling) — <span class="where">The University of Tokyo, Japan</span></li>
+          <li><span class="when">04/2024–03/2025</span> Research Assistant (Project of microplastics modelling) — <span class="where">The University of Tokyo, Japan</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== PUBLICATIONS ====== -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="card">
+        <ol class="publist">
+          <li>
+            Wang, Z., Ito, S., Yabe, I., &amp; Guo, C. (2023). Development of a bioenergetics and population dynamics coupled model: A case study of chub mackerel.
+            <strong>Frontiers in Marine Science</strong>. DOI: <a href="https://doi.org/10.3389/fmars.2023.1142899">10.3389/fmars.2023.1142899</a>
+          </li>
+          <li>
+            Xie, B., Ito, S., Huang, L., Yu, H., Guo, C., &amp; <strong>Wang, Z.</strong> (2024). Growth patterns and optimum habitat of <em>Larimichthys crocea</em> throughout ontogenesis based on a bioenergetics model.
+            <strong>Regional Studies in Marine Science</strong>, 70: 103386.
+          </li>
+          <li>
+            <strong>Wang, Z.</strong>, Matsumura, Y., Yamashita, R., &amp; Ito, S. Marine microplastic distribution under Langmuir circulation inferred from a Lagrangian particle tracking model: Optimal sampling method.
+            <strong>Marine Pollution Bulletin</strong>, <em>on review</em>.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          Email:
+          <a href="mailto:wangexcellent@gmail.com">wangexcellent@gmail.com</a> &nbsp;|&nbsp;
+          <a href="mailto:wzq@aori.u-tokyo.ac.jp">wzq@aori.u-tokyo.ac.jp</a>
+        </p>
+        <p class="muted">Address: 5-1-5, Kashiwano-ha, Kashiwa-city, Chiba 277-8564, Japan</p>
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+      <div>© <span id="y"></span> Ziqin Wang</div>
+      <div class="muted">Built with vanilla HTML &amp; CSS on GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script>
+    // Footer 年份
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Download CV：下载根目录 cv.pdf，并按当天日期重命名为【CV_ZiqinWang_YYYY-MM-DD】.pdf
+    (function(){
+      const btn = document.getElementById('downloadCV');
+      if(!btn) return;
+      btn.addEventListener('click', function(e){
+        const fileUrl = 'cv.pdf'; // 如放在子目录，改成 'assets/cv.pdf' 等
+        const t = new Date();
+        const yyyy = t.getFullYear();
+        const mm = String(t.getMonth()+1).padStart(2,'0');
+        const dd = String(t.getDate()).padStart(2,'0');
+        const filename = `【CV_ZiqinWang_${yyyy}-${mm}-${dd}】.pdf`;
+        this.setAttribute('href', fileUrl);
+        this.setAttribute('download', filename);
+      }, {passive:true});
+    })();
+  </script>
+</body>
+</html>
