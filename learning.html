@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello HTML</title>
+  <meta name="description" content="A minimal starter page">
+  <link rel="stylesheet" href="styles.css"><!-- 可选：把样式放外部 -->
+  <style>
+    body{font-family:system-ui; margin:0; padding:24px;}
+    header, main, footer{max-width:900px; margin:auto;}
+    .nav{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:16px;}
+    .btn{padding:8px 12px; border:1px solid #ccc; border-radius:8px; text-decoration:none;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Site</h1>
+    <nav class="nav">
+      <a class="btn" href="#about">About</a>
+      <a class="btn" href="#work">Work</a>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>Hello! This is a minimal HTML page.</p>
+      <img src="images/example.jpg" alt="Example image" width="300">
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <ul>
+        <li>Project A</li>
+        <li>Project B</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Contact: <a href="mailto:me@example.com">me@example.com</a></p>
+  </footer>
+
+  <script>
+    // 示例：平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){ e.preventDefault(); document.querySelector(id).scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+  </script>
+</body>
+</html>
