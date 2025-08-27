@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ziqin Wang | Academic CV</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Ziqin Wang — Aquatic Bioscience, bioenergetics & population dynamics modeling of Pacific chub mackerel at The University of Tokyo." />
+  <style>
+    :root{
+      --bg:#0b0f14; --panel:#0f1620; --ink:#e7eef7; --muted:#9db0c6; --line:#1c2530;
+      --brand:#4da3ff; --brand-2:#7ad2ff; --accent:#c7ff53;
+      --radius:18px; --radius-sm:12px; --gap:16px; --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:16px 0 8px;border-bottom:1px solid var(--line);position:sticky;top:0;background:linear-gradient(180deg,rgba(11,15,20,.95),rgba(11,15,20,.6) 70%,rgba(11,15,20,0));backdrop-filter:saturate(140%) blur(6px);z-index:10}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#001a33;font-weight:800}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:999px;background:#0c131d;border:1px solid var(--line);color:var(--muted)}
+    nav a:hover{border-color:#203040;color:var(--ink)}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:28px 0}
+    .hero h1{font-size:36px;line-height:1.2;margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+    .actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:11px 16px;border-radius:12px;border:1px solid var(--line);background:#0d141e;color:var(--ink);font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#00152a;border:none}
+    .btn.ghost{background:transparent;color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    @media (max-width:800px){.grid.cols-2{grid-template-columns:1fr}}
+
+    section{padding:12px 0 28px}
+    section h2{margin:0 0 12px;font-size:24px}
+    .timeline{list-style:none;margin:0;padding:0}
+    .timeline li{padding:12px 0;border-bottom:1px dashed var(--line)}
+    .timeline li:last-child{border-bottom:none}
+    .when{display:inline-block;min-width:135px;color:var(--muted);font-variant-numeric:tabular-nums}
+    .where{color:var(--brand-2)}
+    .kicker{letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-size:12px}
+
+    .publist{list-style:decimal;margin:8px 0 0 20px;padding:0}
+    .publist li{margin:10px 0}
+    .badge{display:inline-block;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;margin-left:8px}
+
+    footer{margin:32px 0 12px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- ====== HEADER ====== -->
+    <header>
+      <div class="brand">
+        <div class="avatar">ZW</div>
+        <div>
+          <div class="kicker">Academic Profile</div>
+          <strong>Ziqin Wang</strong>
+        </div>
+      </div>
+      <nav>
+        <a href="#education">Education</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#workshops">Workshops &amp; Practice</a>
+        <a href="#professional">Professional</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="bio">
+      <div>
+        <h1>Hi, I'm Ziqin Wang</h1>
+        <p class="muted">
+          PhD student in Aquatic Bioscience at <span class="where">The University of Tokyo</span>.  
+          Research focus: bioenergetics–population dynamics–migration modeling of Pacific chub mackerel
+          in the Northwest Pacific, with emphasis on Kuroshio dynamics and early life-stage growth.
+        </p>
+        <div class="actions">
+          <!-- 放置在仓库根目录的 cv.pdf 将被下载；下载时自动重命名为【CV_ZiqinWang_YYYY-MM-DD】.pdf -->
+          <a id="downloadCV" class="btn primary" href="#" aria-label="Download CV (PDF)">Download CV (PDF)</a>
+          <!-- 同时写信到两个邮箱 -->
+          <a class="btn" href="mailto:wangexcellent@gmail.com,wzq@aori.u-tokyo.ac.jp">Contact</a>
+          <a class="btn ghost" href="#publications">Jump to Publications</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="kicker">Now</div>
+        <div><strong>The University of Tokyo</strong> — PhD (Aquatic Bioscience)</div>
+        <div class="muted">Modeling • Fisheries Oceanography • Kuroshio • Blue carbon</div>
+        <div style="margin-top:10px">
+          <span class="badge">Python</span>
+          <span class="badge">Fortran</span>
+          <span class="badge">Cartopy</span>
+          <span class="badge">NetCDF</span>
+          <span class="badge">HPC</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EDUCATION ====== -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <ul class="timeline">
+          <!-- TODO: 用你的真实起止时间替换 -->
+          <li>
+            <span class="when">2024–2027</span> PhD, Aquatic Bioscience — <span class="where">The University of Tokyo</span><br/>
+            Supervisor: Prof. Shin-ichi Ito
+          </li>
+          <li>
+            <span class="when">2021–2023</span> M.S., Aquatic Bioscience — <span class="where">The University of Tokyo</span><br/>
+            Supervisor: Prof. Shin-ichi Ito
+          </li>
+          <li>
+            <span class="when">—</span> B.S. — <span class="where">Ocean University of China</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== CONFERENCES ====== -->
+    <section id="conferences">
+      <h2>Conferences</h2>
+      <div class="card">
+        <ul class="timeline">
+          <!-- TODO: 用你的简历里的条目替换/扩充；如下为示例 -->
+          <li>
+            <span class="when">2025</span> ICES Annual Science Conference (ASC) — <span class="where">Copenhagen/Vilnius route</span><br/>
+            Oral presentation, Session K. <!-- 可加题目 -->
+          </li>
+          <li>
+            <span class="when">2024</span> PICES Annual Meeting — <span class="where">Honolulu, USA</span><br/>
+            Poster/Oral presentation. <!-- 根据实际更改 -->
+          </li>
+          <li>
+            <span class="when">—</span> JpGU / OSM / LFC, etc. <!-- 以你的实际经历替换 -->
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== WORKSHOPS & PRACTICE ====== -->
+    <section id="workshops">
+      <h2>Workshops &amp; Practice</h2>
+      <div class="card">
+        <ul class="timeline">
+          <!-- TODO: 用你的简历里的条目替换/扩充 -->
+          <li>
+            <span class="when">—</span> Modeling workshops, numerical oceanography practice, data assimilation short courses.
+          </li>
+          <li>
+            <span class="when">—</span> Fieldwork / cruise participation (CTD, net sampling, etc.). 
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== PROFESSIONAL ====== -->
+    <section id="professional">
+      <h2>Professional</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <div class="kicker">Appointments</div>
+          <ul class="timeline">
+            <!-- TODO: 以你的CV替换 -->
+            <li><span class="when">—</span> Research Assistant — <span class="where">The University of Tokyo</span></li>
+            <li><span class="when">—</span> Spring-GX Doctoral Program Fellow</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="kicker">Service &amp; Activities</div>
+          <ul class="timeline">
+            <!-- TODO: 以你的CV替换 -->
+            <li><span class="when">—</span> Seminar organizer (kakari), scheduling and session coordination</li>
+            <li><span class="when">—</span> Badminton club organizer (UTokyo)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PUBLICATIONS ====== -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="card">
+        <!-- 可按年份分组；下面是结构示例，替换为你的真实论文 -->
+        <h3 class="kicker">Selected</h3>
+        <ol class="publist">
+          <!-- TODO: 用你的真实条目替换；建议格式：作者 (年份). 题目. 期刊 卷(期), 页码. DOI -->
+          <li>
+            Wang, Z., <em>et al.</em> (20XX). Coupled bioenergetics–population model for <em>Scomber japonicus</em> in the NW Pacific.
+            <strong>Progress in Oceanography</strong>. <span class="badge">Modeling</span>
+          </li>
+          <li>
+            Wang, Z., <em>et al.</em> (20XX). Environmental drivers of early life-stage growth for chub mackerel.
+            <strong>Journal TBD</strong>. <span class="badge">Early life</span>
+          </li>
+        </ol>
+        <!-- 如果你需要“in prep / submitted / accepted”也可以加小分组 -->
+        <h3 class="kicker" style="margin-top:16px;">In preparation / submitted</h3>
+        <ol class="publist">
+          <!-- TODO: 替换为你的实际状态论文 -->
+          <li>Wang, Z., <em>et al.</em> (in prep). Kuroshio Large Meander impacts on recruitment variability.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          Email: <a href="mailto:wangexcellent@gmail.com">wangexcellent@gmail.com</a> &nbsp;|&nbsp;
+          <a href="mailto:wzq@aori.u-tokyo.ac.jp">wzq@aori.u-tokyo.ac.jp</a>
+        </p>
+        <!-- 你也可以在这里放地址、学术主页、ORCID 等 -->
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+      <div>© <span id="y"></span> Ziqin Wang</div>
+      <div class="muted">Built with vanilla HTML &amp; CSS on GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script>
+    // Footer 年份
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Download CV：同域下载 cv.pdf，并在下载时按当天日期重命名为【CV_ZiqinWang_YYYY-MM-DD】.pdf
+    // 使用方法：把你的 PDF 放在仓库根目录并命名为 cv.pdf
+    (function(){
+      const btn = document.getElementById('downloadCV');
+      if(!btn) return;
+      btn.addEventListener('click', function(e){
+        // 若你将 PDF 放到子目录，请把此处路径改为相对路径，如 'assets/CV.pdf'
+        const fileUrl = 'cv.pdf';
+        const t = new Date();
+        const yyyy = t.getFullYear();
+        const mm = String(t.getMonth()+1).padStart(2,'0');
+        const dd = String(t.getDate()).padStart(2,'0');
+        const filename = `【CV_ZiqinWang_${yyyy}-${mm}-${dd}】.pdf`;
+        // 设置下载的目标与文件名
+        this.setAttribute('href', fileUrl);
+        this.setAttribute('download', filename);
+        // 对于少数移动端/旧浏览器，确保是普通跳转下载
+      }, {passive:true});
+    })();
+  </script>
+</body>
+</html>
